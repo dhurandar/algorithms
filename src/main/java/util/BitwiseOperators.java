@@ -46,9 +46,4 @@ public class BitwiseOperators {
         System.out.println(xor1);
     }
 
-
-    public static void main(String args[]){
-        why0xFF();
-    }
-
 }
