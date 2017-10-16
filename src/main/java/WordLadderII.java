@@ -71,6 +71,7 @@ public class WordLadderII {
     }
 
     private Object createGraph(String[] strings) {
+        return null;
     }
 
     private int editDistance(String s1,String s2) {

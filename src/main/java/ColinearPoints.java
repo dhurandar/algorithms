@@ -40,7 +40,7 @@ public class ColinearPoints {
         }
 
     }
-
+/**
     public static void colinearPoints(List<Points> pointsList) {
         Map<Integer,Integer> slopes = new HashMap<Integer,Integer>(  );
         if(pointsList == null) throw new IllegalArgumentException(  );
@@ -53,13 +53,14 @@ public class ColinearPoints {
             for(int j = 0 ; j < pointsList.size();++) {
                 if (!slopes.containsKey( pointsList.get( i ).hashCode() )) {
                     slopes.put( pointsList.get( i ).slope( j ),pointsList.get( i ).hashCode() );
-                }
+                hashCode}
 
             }
 
         }
 
     }
+ */
 }
 
 
