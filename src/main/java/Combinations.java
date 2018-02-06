@@ -47,11 +47,7 @@ public class Combinations {
         final int numRemaining = k - partialCombination.size();
         for (int i = startIndex; i < input.size() && numRemaining <= input.size() - i + 1; ++i) {
             partialCombination.add( input.get( i ) );
-            System.out.println(" add size " + partialCombination.size());
-            System.out.println("=XX=" + partialCombination);
             combinations( input, k, i + 1, partialCombination, result );
-            System.out.println(" remove size " + partialCombination.size());
-            System.out.println("==== Remove " + partialCombination.get( partialCombination.size()-1 ));
             partialCombination.remove( partialCombination.size() - 1 );
             if(partialCombination.isEmpty() ) {
                 System.out.println(" partial array is empty " + partialCombination.isEmpty());

@@ -50,11 +50,5 @@ public class PermutationProblems {
     public static void main(String[] str) {
 
         permutations( "abc".toCharArray(),0 );
-//        System.out.println(checkPermutationPalindrome( "abcba" ));
-//        System.out.println(checkPermutationPalindrome( "abbcbcbcbcbcbcccbcbcbcbcbcbba" ));
-//        System.out.println(checkPermutationPalindrome( "rahul" ));
-//        System.out.println(checkPermutationPalindrome( "dalad" ));
-//        System.out.println(checkPermutationPalindrome( "malayalam" ));
-//        System.out.println(checkPermutationPalindrome( "#######malayalam#######" ));
     }
 }
