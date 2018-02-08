@@ -1,6 +1,10 @@
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  *
- * Design and implement an elevator control system. What data structures, interfaces and algorithms will you need? Your elevator control system should be able to handle a few elevators — up to 16.
+ * Design and implement an elevator control system. What data structures, interfaces and algorithms will you need?
+ * Your elevator control system should be able to handle a few elevators — up to 16.
 
  You can use the language of your choice to implement an elevator control system. In the end, your control system should provide an interface for:
 
@@ -24,17 +28,107 @@
 
  Pickup Floor, Direction (negative for down, positive for up)
 
- This is not a particularly nice interface, and leaves some questions open. For example, the elevator state only has one goal floor; but it is conceivable that an elevator holds more than one person, and each person wants to go to a different floor, so there could be a few goal floors queued up. Please feel free to improve upon this interface!
+ This is not a particularly nice interface, and leaves some questions open.
+ For example, the elevator state only has one goal floor; but it is conceivable
+ that an elevator holds more than one person, and each person wants to go to a
+ different floor, so there could be a few goal floors queued up.
+ Please feel free to improve upon this interface!
 
- The most interesting part of this challenge is the scheduling problem. The simplest implementation would be to serve requests in FCFS (first-come, first-served) order. This is clearly bad; imagine riding such an elevator! Please discuss how your algorithm improves on FCFS in your write-up.
+ The most interesting part of this challenge is the scheduling problem.
+ The simplest implementation would be to serve requests in FCFS (first-come, first-served) order.
+ This is clearly bad; imagine riding such an elevator!
+ Please discuss how your algorithm improves on FCFS in your write-up.
 
- Please provide a source tarball containing code in the language of your choice, as well as a README discussing your solution (and providing build instructions). The accompanying documentation is an important part of your submission. It counts to show your work.
+ Please provide a source tarball containing code in the language of your choice,
+ as well as a README discussing your solution (and providing build instructions).
+ The accompanying documentation is an important part of your submission. It counts to show your work.
 
  Good luck!
+
  * Created by rsingh13.
  *
  */
 public class ElevatorControlSystem {
 
-    
+
+
+    private final int maxElevators=16;
+
+    private final int maxfloors = 50;
+
+   /**
+    * No of people who wants to go up from the current floor , for a given floor
+    */
+   private int[] up = new int[maxfloors];
+
+   /**
+    * No of people who wants to go up from the current floor , for a given floor
+    */
+   private int[] down = new int[maxfloors];
+
+
+   private Status status;
+
+
+
+
+   private enum Direction{UP,DOWN};
+
+    class Status{
+        int elevatorID=-1;
+        int floor=-1;
+        int goalfloor=-1;
+    }
+
+    class Elevator {
+        private int occupants;
+        private int[] occupantsPerFloor;
+        private Status status = new Status();
+
+        Elevator() {
+            occupantsPerFloor = new int[maxfloors];
+        }
+        private boolean addOccupantsForFloor(int floor, int noOfOccupants) {
+
+            occupantsPerFloor[floor] = noOfOccupants;
+            return false;
+        }
+
+        private Status getStatus() {
+            return status;
+        }
+
+        private boolean updateStatus(int goal) {
+
+            //TODO validate the floors and check for current max and set the goal as the max
+            if(status.goalfloor < goal) {
+                status.goalfloor = goal;
+                return true;
+            }
+            return false;
+        }
+    }
+
+   public Status status() {
+        return
+
+   }
+
+   public int update(Status status) {
+
+   }
+
+   public void pickup(Direction direction, int floor){
+
+   }
+
+   public void step() {
+
+   }
+
+   public static void main(String[] args) {
+
+   }
+
+
 }
