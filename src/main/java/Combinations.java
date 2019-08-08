@@ -1,4 +1,3 @@
-import com.sun.xml.internal.ws.policy.privateutil.PolicyUtils;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -81,14 +80,6 @@ public class Combinations {
                 System.out.println(list);
             }
 
-//            StringBuilder sb = new StringBuilder( "3ahul" );
-//            StringBuilder sb = new StringBuilder( "4ahul" );
-//            StringBuilder sb = new StringBuilder( "5ahul" );
-//            StringBuilder sb = new StringBuilder( "7ahul" );
-//            StringBuilder sb = new StringBuilder( "8ahul" );
-//            StringBuilder sb = new StringBuilder( "9ahul" );
-//            StringBuilder sb = new StringBuilder( "0ahul" );
-//            StringBuilder sb = new StringBuilder( "11hul" );
         }
 
     }

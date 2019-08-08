@@ -21,16 +21,10 @@ public class GCD {
         System.out.println(new GCD().gcd( 0,-70 ));
 
         int i ;
-
         for(i = 0 ; i < 10 ; i++) {
-
         }
-
             int x = i;
-
         System.out.println(x);
-
-
         System.out.println( 4 & 3);
 
     }

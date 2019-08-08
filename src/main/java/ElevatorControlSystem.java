@@ -109,6 +109,7 @@ public class ElevatorControlSystem {
 
    public int update(Status status) {
 
+        return 0;
    }
 
    public void pickup(Direction direction, int floor){

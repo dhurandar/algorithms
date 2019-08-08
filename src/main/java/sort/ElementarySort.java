@@ -13,6 +13,7 @@ public class ElementarySort {
             for(int j = i+1 ; j < input.length;j++) {
 
                 //find the current minIndex till this point and
+                //figure the minimum till this point
                 if(input[j] < input[minIndex]) {
                     minIndex = j;
                 }
